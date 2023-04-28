@@ -16,7 +16,7 @@ Use the 1.x versions if you need support for Nova 3
 You can install this package on a Laravel app that uses [Nova](https://nova.laravel.com) via composer:
 
 ```bash
-composer require webparking/nova-belongs-to-dependency
+composer require boliver20/nova-belongs-to-dependency
 ```
 
 ## Usage

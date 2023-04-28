@@ -19,8 +19,6 @@ export default {
         }
     },
 
-    
-
     methods: {
         registerDependencyWatchers(root) {
             this.walk(root.$.vnode, component => {
@@ -28,7 +26,7 @@ export default {
                     if (component.selectedResourceId !== undefined) {
                         // BelongsTo field
                         component.$watch('selectedResourceId', this.dependencyWatcher, {immediate: true});
-                     
+
                         this.dependencyWatcher(component.selectedResourceId);
                     } else if (component.value !== undefined) {
                         // Text based fields
@@ -38,7 +36,7 @@ export default {
                 }
 
             })
-            
+
         },
         componentIsDependency(component) {
             if (component.field === undefined) {
@@ -83,14 +81,12 @@ export default {
     computed: {
         queryParams() {
             return {
-                params: {
-                    current: this.selectedResourceId,
-                    first: this.initializingWithExistingResource,
-                    search: this.search,
-                    withTrashed: this.withTrashed,
-                    dependsOnValue: this.dependsOnValue,
-                },
-            };
+                current: this.selectedResourceId,
+                first: this.initializingWithExistingResource,
+                search: this.search,
+                withTrashed: this.withTrashed,
+                dependsOnValue: this.dependsOnValue,
+            }
         },
     },
 }

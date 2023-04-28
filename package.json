@@ -17,13 +17,18 @@
         "resolve-url-loader": "^2.3.2",
         "sass": "^1.51.0",
         "sass-loader": "^12.6.0",
-        "vue-loader": "^16.8.3"
+        "vue-loader": "^16.8.3",
+        "@babel/plugin-transform-runtime": "^7.17.0",
+        "@babel/runtime": "^7.17.9"
     },
     "dependencies": {
+        "axios": "^0.21.2",
         "@inertiajs/inertia": "^0.11.0",
-        "lodash": "^4.17.11",
+        "lodash": "^4.17.21",
         "uid": "^2.0.0",
         "vue": "^3.0",
-        "vuex": "^4.0.2"
+        "vuex": "^4.0.2",
+        "form-backend-validation": "^2.3.3",
+        "inflector-js": "^1.0.1"
     }
 }
